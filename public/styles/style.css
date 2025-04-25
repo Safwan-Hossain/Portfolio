@@ -1,0 +1,416 @@
+:root {
+    --primary: #263238;
+    --accent: #00bfa5;
+    --bg: #ffffff;
+    --surface: #fafafa;
+    --border: #e0e0e0;
+    --text-secondary: #616161;
+    --term-bar: #e8f7f4;
+    --term-bg: #fdfdfd;
+    --term-text: #26433f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+
+    font-family: 'Inter', sans-serif;
+    background: #fcfcfc;
+    color: var(--primary);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+
+.nav-logo {
+    font-size: 1rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    padding: 0.3rem 0.6rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: background 0.2s, color 0.2s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #fff8e1, #b3e5fc);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.profile-wrapper img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 0 4px #fff, 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-text {
+    text-align: left;
+}
+
+.profile-text h1 {
+    font-size: 2.5rem;
+}
+
+.profile-text p {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: var(--text-secondary);
+}
+.section {
+    padding: 3rem 1rem;
+    max-width: 960px;
+    margin: auto;
+    scroll-margin-top: 80px;
+}
+
+/* Remove top padding from all except first section */
+.section:not(:first-of-type) {
+    padding-top: 0;
+}
+
+/* Remove bottom padding except last section */
+.section:not(:last-of-type) {
+    padding-bottom: 0;
+}
+
+.section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background: var(--bg);
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.card img.thumbnail {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    align-self: center;
+}
+
+#projectList .card-header {
+    margin-bottom: 0.75rem;
+}
+
+
+#projectList .card-desc {
+    margin-bottom: 0.5rem;
+}
+
+#projectList .project-links {
+    margin-top: 0.5rem;
+}
+
+
+
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+
+.tag {
+    display: inline-block;
+    background: #e0f7fa;
+    color: #00695c;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-family: 'Fira Code', monospace;
+    white-space: nowrap;
+}
+.tag.more {
+    background: #b2dfdb;
+    color: #004d40;
+    font-weight: 500;
+    cursor: pointer;
+}
+.card-desc {
+    font-size: 0.9rem;
+}
+
+
+.project-links {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+.project-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.65rem;
+    border: 1px solid var(--accent);
+    border-radius: 7px;
+    transition: background 0.2s;
+}
+.project-links a i {
+    color: var(--accent);
+}
+.project-links a:hover {
+    background: var(--accent);
+    color: #fff;
+}
+.project-links a:hover i {
+    color: #fff;
+}
+
+
+
+.xp-list {
+    margin-top: 0.6rem;
+    padding-left: 1rem;
+}
+.xp-list li {
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.xp-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.xp-role {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.xp-company {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+.xp-duration {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.terminal-window {
+    background: var(--term-bg);
+    border: 1px solid var(--border);
+    border-radius: 11px;
+    color: var(--term-text);
+    font-family: 'Fira Code', monospace;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+.terminal-bar {
+    background: var(--term-bar);
+    padding: 0.4rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-dot {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+}
+
+.terminal-dot:nth-child(1) {
+    background: #ff5f56;
+}
+
+.terminal-dot:nth-child(2) {
+    background: #ffbd2e;
+}
+
+
+.terminal-dot:nth-child(3) {
+    background: #27c93f;
+}
+
+
+.terminal-body {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.term-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+
+.term-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent);
+}
+
+
+.term-bio p {
+    margin: 0.25rem 0;
+    font-size: 0.92rem;
+    line-height: 1.4;
+}
+
+.term-bio strong {
+    color: var(--accent);
+}
+.cli-line {
+    min-height: 2.2rem;
+    color: var(--accent);
+    white-space: pre-wrap;
+}
+.blink::after {
+    content: "▌";
+    animation: blink 1s steps(1) infinite;
+}
+
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.55rem 1.1rem;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    background: transparent;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.social-btn i {
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+.social-btn:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+
+.social-btn:hover i {
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background: #f4f6e2;
+    padding: 2rem;
+    font-size: 0.85rem;
+}
+
+
+.text-logo {
+    font-family: 'Fira Code', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background: #e0f7fa;
+    color: #00695c;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0.5rem;
+    text-align: center;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    align-self: center;
+}
+
+
+

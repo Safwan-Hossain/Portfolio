@@ -1,0 +1,122 @@
+{
+  "logo": "<Safwan />",
+  "profile": {
+    "name": "Safwan Hossain",
+    "tagline": "I like creating things - useful, fun, or sometimes just to see what happens :)",
+    "avatar": "./public/images/avatar2.webp"
+  },
+  "nav": [
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Experience", "href": "#experience" },
+    { "label": "Education", "href": "#education" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "projects": [
+    {
+      "title": "Poker Game Server",
+      "thumb": "./public/images/poker.png",
+      "description": "Real time Texas Hold’em multiplayer server with reactive WebSocket gameplay and cloud native architecture. Built with Spring Boot WebFlux and deployed to AWS Fargate.",
+      "tags": [
+        "AWS Fargate",
+        "Docker",
+        "Java",
+        "Spring Boot",
+        "WebFlux",
+        "Project Reactor",
+        "Spring Statemachine",
+        "CI/CD",
+        "GitHub Actions",
+        "Lombok",
+        "Jackson"
+      ],
+      "links": [
+        {
+          "icon": "fab fa-github",
+          "label": "Repo",
+          "url": "https://github.com/Safwan-Hossain/Java-Poker"
+        },
+        {
+          "icon": "fas fa-play",
+          "label": "Live Demo",
+          "url": "https://poker.hossainsafwan.com"
+        }
+      ]
+    },
+    {
+      "title": "Spring Login Service",
+      "thumb": "./public/images/springlogin.png",
+      "description": "Production ready Spring Boot login system with Azure deployment, GraalVM native builds, PostgreSQL integration, and email verification.",
+      "tags": [
+        "Spring Boot", "Java", "Spring Security", "GraalVM", "Azure",
+        "Docker", "PostgreSQL", "Email SMTP", "Spring AOT", "CI/CD",
+        "GitHub Actions", "Secure Auth", "Role-Based Access"
+      ],
+      "links": [
+        { "icon": "fab fa-github", "label": "Repo", "url": "https://github.com/Safwan-Hossain/Spring-Login-Service" },
+        { "icon": "fas fa-play", "label": "Live Demo", "url": "https://login.hossainsafwan.com" }
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Junior Java Developer [Full Time]",
+      "company": "Sarabun IT Solutions",
+      "duration": "May 2024 – Present",
+      "location": "Toronto, Ontario",
+      "logo": "",
+      "bullets": [
+        "Developed scalable REST APIs and microservices for a financial services provider using Java, Spring Boot, and SQL, enhancing security and enabling seamless management of high-value transactions.",
+        "Reduced processing time by 32% for Javabased hospital invoice processing software through code refactoring and performance tuning.",
+        "Reduced memory usage by 17% by minimizing object creation, optimizing serialization techniques, and implementing more efficient data structures.",
+        "Converted a monolithic pawn shop enterprise application into microservices, improving scalability, resilience, and deployment efficiency."
+      ]
+    },
+    {
+      "role": "Client Success & Operations Analyst",
+      "company": "Hybernate Management Inc",
+      "duration": "May 2024 – March 2025",
+      "location": "Toronto, Ontario",
+      "logo": "./public/images/hybernate.png",
+      "bullets": [
+        "Built and maintained strong relationships with property owners through regular check-ins, performance reviews, and clear communication, increasing long-term client retention.",
+        "Improved overall client satisfaction by 17% by engaging directly with property owners to understand challenges (e.g., delayed financial updates, difficulty navigating software) and implementing tailored solutions like automated reporting and UI walkthroughs.",
+        "Boosted operational efficiency by 66% by streamlining daily tasks and automating workflows, including management activities and financial reporting, leveraging tools such as Zapier, Lodgify, and PriceLabs."
+      ]
+    },
+    {
+      "role": "Junior Java Developer [Co-op]",
+      "company": "Sarabun IT Solutions",
+      "duration": "June 2022 – August 2023",
+      "location": "Toronto, Ontario",
+      "logo": "",
+      "bullets": [
+        "Reduced load times by 14% by debugging and optimizing Angular code, improving front end performance.",
+        "Refactored legacy Java codebases to reduce technical debt and improve maintainability using modern design patterns.",
+        "Achieved over 90% line and branch coverage by writing unit tests using Java, Spring Boot, Maven, Jacoco, Mockito, JUnit, and SQL.",
+        "Followed Agile methodologies using tools like Jira and Rally for continuous integration and sprint planning."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "McMaster University",
+      "degree": "B.Eng. Software Engineering",
+      "duration": "Sept 2019 - Apr 2024",
+      "logo": "./public/images/mcmaster.jpg"
+    }
+  ],
+  "contact": {
+    "lines": ["$ safwanh2708@gmail.com ", "$ github.com/Safwan-Hossain ", "$ linkedin.com/in/safwan-hossain "],
+    "bio": [
+      { "cmd": "$ whoami", "out": "Software engineer exploring backend and full stack development" },
+      { "cmd": "$ focus", "out": "I make things that are helpful, or harmlessly chaotic" },
+      { "cmd": "$ fun", "out": "Hiking, side projects, and breaking things" }
+    ],
+    "socials": [
+      { "icon": "fas fa-envelope", "label": "Email", "url": "mailto:safwanh2708@gmail.com" },
+      { "icon": "fab fa-github", "label": "GitHub", "url": "https://github.com/Safwan-Hossain" },
+      { "icon": "fab fa-linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/safwan-hossain/" }
+    ]
+  },
+  "footer": "© 2025 Safwan Hossain"
+}
