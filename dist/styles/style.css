@@ -303,3 +303,36 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card img.thumbnail {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-content {
+        align-items: center;
+    }
+
+    .card-header {
+        justify-content: center;
+    }
+
+    .card-desc {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .project-links {
+        justify-content: center;
+    }
+
+    .xp-title {
+        align-items: center;
+    }
+}

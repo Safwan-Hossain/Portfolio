@@ -1,0 +1,91 @@
+
+nav {
+    position: sticky;
+    padding: 1rem 2rem;
+    top: 0;
+    z-index: 10;
+    background: var(--surface);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    padding: 0.3rem 0.6rem;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    transition: background 0.2s, color 0.2s;
+    border-radius: 5px;
+}
+
+
+.nav-links a:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+
+.nav-toggle { display: none; }
+
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        padding: .5rem 1rem;
+        gap: .5rem;
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        cursor: pointer;
+    }
+
+
+    .nav-toggle .bar {
+        width: 22px;
+        height: 2px;
+        background: var(--primary);
+        transition: transform .2s ease, opacity .2s ease;
+    }
+
+
+    .nav-toggle.open .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .nav-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.open .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
+    .nav-links a {
+        padding: .65rem 1rem; font-size: 1rem;
+    }
+}

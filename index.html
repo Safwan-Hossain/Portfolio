@@ -2,18 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Safwan Hossain – Portfolio</title>
     <meta name="description" content="Hi, I'm Safwan, a software engineer who enjoys building backend systems and apps. This is where I share my work." />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="public/styles/style.css">
+
+    <link rel="stylesheet" href="public/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="public/styles/main.css">
 </head>
 <body>
-<nav aria-label="Primary">
+<nav aria-label="Primary" role="navigation">
     <div class="nav-logo" id="logo"></div>
+
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
     <div class="nav-links" id="navLinks"></div>
 </nav>
+
 
 <header>
     <div class="profile-wrapper" id="profile"></div>

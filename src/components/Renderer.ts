@@ -67,7 +67,7 @@ export class Renderer {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
-         <img class="thumbnail" src="${project.thumb}" alt="${project.title} thumbnail">
+         <img class="thumbnail" src="${project.thumb}" loading="lazy" alt="${project.title} thumbnail">
          <div class="card-content">
             <div class="card-header"><h3>${project.title}</h3></div>
             <p class="card-desc">${project.description}</p>
@@ -125,7 +125,7 @@ export class Renderer {
             const hasLogo = exp.logo && exp.logo.trim() !== '';
 
             const logoHTML = hasLogo
-                ? `<img class="thumbnail" src="${exp.logo}" alt="${exp.role} logo">`
+                ? `<img class="thumbnail" src="${exp.logo}" loading="lazy" alt="${exp.role} logo">`
                 : `<div class="text-logo">${this.escapeHtml(exp.company)}</div>`;
 
             card.innerHTML = `
@@ -182,7 +182,7 @@ export class Renderer {
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
-      <img class="thumbnail" src="${edu.logo}" alt="${edu.school} logo">
+      <img class="thumbnail" src="${edu.logo}" loading="lazy" alt="${edu.school} logo">
       <div class="card-content">
         <strong class="xp-role">${edu.degree}</strong>
         <span class="xp-company">${edu.school}</span>
@@ -314,12 +314,8 @@ export class Renderer {
         header.addEventListener('mouseenter', showAllTags);
         header.addEventListener('mouseleave', hideExtraTags);
 
-        more.addEventListener('click', () => {
-            expanded ? hideExtraTags() : showAllTags();
-        });
-
-        more.addEventListener('touchstart', (e) => {
-            e.preventDefault(); // Prevent double events on mobile
+        more.addEventListener('pointerup', (e) => {
+            e.preventDefault();
             expanded ? hideExtraTags() : showAllTags();
         }, { passive: false });
     }

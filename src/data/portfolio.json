@@ -14,7 +14,7 @@
   "projects": [
     {
       "title": "Poker Game Server",
-      "thumb": "./images/poker.png",
+      "thumb": "./images/poker.webp",
       "description": "Real time Texas Hold’em multiplayer server with reactive WebSocket gameplay and cloud native architecture. Built with Spring Boot WebFlux and deployed to AWS Fargate.",
       "tags": [
         "AWS Fargate",
@@ -44,7 +44,7 @@
     },
     {
       "title": "Spring Login Service",
-      "thumb": "./images/springlogin.png",
+      "thumb": "./images/springlogin.webp",
       "description": "Production ready Spring Boot login system with Azure deployment, GraalVM native builds, PostgreSQL integration, and email verification.",
       "tags": [
         "Spring Boot", "Java", "Spring Security", "GraalVM", "Azure",
@@ -76,7 +76,7 @@
       "company": "Hybernate Management Inc",
       "duration": "May 2024 – March 2025",
       "location": "Toronto, Ontario",
-      "logo": "./images/hybernate.png",
+      "logo": "./images/hybernate.webp",
       "bullets": [
         "Built and maintained strong relationships with property owners through regular check-ins, performance reviews, and clear communication, increasing long-term client retention.",
         "Improved overall client satisfaction by 17% by engaging directly with property owners to understand challenges (e.g., delayed financial updates, difficulty navigating software) and implementing tailored solutions like automated reporting and UI walkthroughs.",
@@ -102,7 +102,7 @@
       "school": "McMaster University",
       "degree": "B.Eng. Software Engineering",
       "duration": "Sept 2019 - Apr 2024",
-      "logo": "./images/mcmaster.jpg"
+      "logo": "./images/mcmaster.webp"
     }
   ],
   "contact": {
